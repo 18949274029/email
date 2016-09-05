@@ -18,7 +18,7 @@ public class JavaMailSend {
         // 发送服务器需要身份验证  
         props.setProperty("mail.smtp.auth", "true");  
         // 设置邮件服务器主机名  
-        props.setProperty("mail.host", "smtp.163.com");  
+        props.setProperty("mail.host", "smtp.qq.com");  
         // 发送邮件协议名称  
         props.setProperty("mail.transport.protocol", "smtp");  
           
@@ -31,11 +31,12 @@ public class JavaMailSend {
         // 设置邮件内容  
         msg.setText("this bbs is quit!");  
         // 设置发件人  
-        msg.setFrom(new InternetAddress("18949274029@163.com"));  
+        msg.setFrom(new InternetAddress("379106481@qq.com"));  
           
         Transport transport = session.getTransport();  
         // 连接邮件服务器  
-        transport.connect("18949274029", "lifeifei521");  
+        transport.connect("379106481", "lifeifei519119");  
+//        jgdyyppvhuepbhhg
         // 发送邮件  
         transport.sendMessage(msg, new Address[] {new InternetAddress("379106481@qq.com")});  
         // 关闭连接  
